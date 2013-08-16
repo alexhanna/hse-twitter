@@ -9,7 +9,8 @@ password = ''
 auth     = tweepy.auth.BasicAuthHandler(username, password)
 api      = tweepy.API(auth)
 
-## eventually you'll need to use OAuth. Here's the code for it
+## Eventually you'll need to use OAuth. Here's the code for it here.
+## You can learn more about OAuth here: https://dev.twitter.com/docs/auth/oauth
 #consumer_key        = ""
 #consumer_secret     = ""
 #access_token        = ""
@@ -20,7 +21,7 @@ api      = tweepy.API(auth)
 #auth.set_access_token(access_token, access_token_secret)
 
 def main( mode = 1 ):
-    track  = ['obama']
+    track  = ['obama', 'egypt']
     follow = []
             
     listen = SListener(api, 'test')
