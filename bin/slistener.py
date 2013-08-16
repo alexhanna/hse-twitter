@@ -35,7 +35,7 @@ class SListener(StreamListener):
 
         if self.counter >= 20000:
             self.output.close()
-            self.output = open('../streaming_data/' + self.fprefix + '.' 
+            self.output = open('../data/' + self.fprefix + '.' 
                                + time.strftime('%Y%m%d-%H%M%S') + '.json', 'w')
             self.counter = 0
 
